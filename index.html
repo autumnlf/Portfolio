@@ -9,21 +9,22 @@
     <title>Autumn Fields | UI/UX Designer</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat:300,400,500,600,700,800,900">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Molle&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+    </style>
 </head>
 
 
 <body>
     <!-- Header/navigation -->
-    <header id="header">
+    <header>
 
         <h1>Autumn Fields</h1>
-
+        <div id="lineBreakTop"></div>
         <nav id="navBar">
             <a href="#aboutMe">About Me</a>
             <a href="#myWork">Work</a>
-            <a href="#contactMe">Contact Me</a>
+            <a href="#contactMe">Contact</a>
             <a href="https://www.autumnlfields.com/_files/ugd/214778_3c1291fbebff4d6aa5951607d4615efe.pdf"
                 target="blank">Resume</a>
         </nav>
@@ -32,9 +33,10 @@
 
     <!-- About Me section -->
     <section id="aboutMe">
-        <h2>About Me</h2>
+        <img id="selfie" src="./assets/Autumn Fields_Photo.jpg">
         <div id="aboutContent">
-            <img id="selfie" src="./assets/Autumn Fields_Photo.jpg">
+            <h2>About Me</h2>
+            <div id="lineBreakAbout"></div>
             <p>
                 I'm an Industrial Design graduate from Georgia Tech.
                 <br>
@@ -51,44 +53,67 @@
     <!-- Work section -->
     <section id="myWork">
         <h2>My Work</h2>
+        <div id="lineBreak"></div>
         <div id="workContent">
-            <div id="p1">
-                <a class="workPic" href="https://github.com/jdmill/Eventplan" target="blank"></a>
-                <p>Eventplan: Our group created an easy to use, user-friendly way to see local events in their desired
-                    location.</p>
-                <a href="https://jdmill.github.io/Eventplan/">Deployment</a>
+            <div id="project">
+                <div id="titles">
+                    <h3>Eventplan</h3>
+                    <a href="https://jdmill.github.io/Eventplan/" target="blank">Deployment</a>
+                </div>
+                <a id="p1" href="https://github.com/jdmill/Eventplan" target="blank"></a>
+                <p>Our group created an easy to use, user-friendly way to see local events in their desired location.
+                </p>
             </div>
-            <div id="p2">
-                <a class="workPic" href="https://github.com/barrygilreath3/community-bulletin-board" target="blank"></a>
-                <p>Community Bulletin Board: For this group project we published an npm package for generating a message
+
+            <div id="project">
+                <div id="titles">
+                    <h3>Community Bulletin Board</h3>
+                    <a href="https://www.npmjs.com/package/@gtbootcampproject2/community-bulletin-board"
+                        target="blank">NPM Package
+                        Link</a>
+                </div>
+                <a id="p2" href="https://github.com/barrygilreath3/community-bulletin-board" target="blank"></a>
+                <p>For this group project we published an npm package for generating a message
                     board site.</p>
-                <a href="https://www.npmjs.com/package/@gtbootcampproject2/community-bulletin-board">NPM Package
-                    Link</a>
             </div>
-            <div id="p3">
-                <a class="workPic" href="https://github.com/autumnlf/HW06_Weather-Dashboard" target="blank"></a>
-                <p>Weather Dashboard: a weather site that allows the user to type in a city and be given the current
+
+            <div id="project">
+                <div id="titles">
+                    <h3>Weather Dashboard</h3>
+                    <a href="https://autumnlf.github.io/HW06_Weather-Dashboard/" target="blank">Deployment</a>
+                </div>
+                <a id="p3" href="https://github.com/autumnlf/HW06_Weather-Dashboard" target="blank"></a>
+                <p>A weather site that allows the user to type in a city and be given the current
                     weather as well as a 5-day forecast.</p>
-                <a href="https://autumnlf.github.io/HW06_Weather-Dashboard/">Deployment</a>
             </div>
-            <div id="p4">
-                <a class="workPic" href="https://github.com/autumnlf/HW03_PasswordGenerator" target="blank"></a>
-                <p>Password Generator: this site allows users to choose attributes to include and be given a randomly
+
+            <div id="project">
+                <div id="titles">
+                    <h3>Password Generator</h3>
+                    <a href="https://autumnlf.github.io/HW03_PasswordGenerator/" target="blank">Deployment</a>
+                </div>
+                <a id="p4" href="https://github.com/autumnlf/HW03_PasswordGenerator" target="blank"></a>
+                <p>This site allows users to choose attributes to include and be given a randomly
                     generated password.</p>
-                <a href="https://autumnlf.github.io/HW03_PasswordGenerator/">Deployment</a>
             </div>
-            <div id="p5">
-                <a class="workPic" href="https://github.com/autumnlf/Team-Profile-Generator" target="blank"></a>
-                <p>Team Profile Generator: this application generates an html file after gathering information through
+
+            <div id="project">
+                <div id="titles">
+                    <h3>Team Profile Generator</h3>
+                </div>
+                <a id="p5" href="https://github.com/autumnlf/Team-Profile-Generator" target="blank"></a>
+                <p>This application generates an html file after gathering information through
                     command-line prompts for a user to add team members.</p>
             </div>
+
         </div>
     </section>
 
     <!-- contact info section -->
     <section id="contactMe">
         <h2>Contact</h2>
-        <div>
+        <div id="lineBreak"></div>
+        <div id="contactNav">
             <a href="tel:+14785954006" target="blank">478-595-4006</a>
             <a href="mailto:autumnf12@gmail.com" target="blank">autumnF12@gmail.com</a>
             <a href="https://github.com/autumnlf" target="blank">GitHub</a>
