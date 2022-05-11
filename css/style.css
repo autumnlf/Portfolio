@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--pink);
     font-family: 'Molle';
     align-self: center;
@@ -55,7 +55,7 @@ p {
 header {
     width: 80%;
     margin: 1rem 0 0 10%;
-    height: 4rem;
+    height: 3.5rem;
     background-color: var(--cream);
     border-radius: 200px;
     border: none;
